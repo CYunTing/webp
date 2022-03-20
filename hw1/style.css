@@ -1,0 +1,83 @@
+
+p1{
+    float :right;
+    color :aqua;
+    background-color: chocolate;
+}
+
+img{
+    width: 100%;
+    height: auto; 
+}
+
+@media screen and (max-width:575.98px) {
+    p1{
+        float :auto;
+        width:100%;
+        color :black;
+        background-color : greenyellow;
+    }
+
+    img{
+        float:left;
+        width:100%;
+        height:auto;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767.98px) {
+    p1{
+        float :auto;
+        width:100%;
+        color :aquamarine;
+        background-color: green;
+    }
+    img{
+        float:right;
+        width:100%;
+        height:auto;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991.98px) {
+    p1{
+        float :auto;
+        width:100%;
+        color :blue;
+        background-color: pink;
+    }
+    img{
+        float:left;
+        width:100%;
+        height:auto;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199.98px){
+    p1{
+        float :auto;
+        width:100%;
+        color :hotpink;
+        background-color: red;
+    }
+    img{
+        float:right;
+        width:100%;
+        height:auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    p1{
+        float :auto;
+        width:100%;
+        color :burlywood;
+        background-color: purple;
+    }
+    img{
+        float:left;
+        width:100%;
+        height:auto;
+    }
+}
+
