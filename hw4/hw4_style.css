@@ -1,0 +1,67 @@
+.one{
+    width:1300px;
+    height: 60px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: blueviolet; 
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
+
+.two{
+    width:1300px;
+    height: 60px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: #08d; 
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
+
+.three{
+    width:1300px;
+    height: 60px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: #182;
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
+
+.four{
+    width:1300px;
+    height: 60px;
+    border-width: 5px;
+    border-style: groove;
+    border-color:aqua;
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
+
+.five{
+    width:1300px;
+    height: 60px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: palevioletred;
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
+
+.six{
+    width:1300px;
+    height: 60px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: orangered;
+    padding-left: 3px;
+}
+
+img{
+    height:50px;
+    width:30px;
+    position: relative; /*用absolute會覆蓋*/ /*移動:fixed.absolute.relative*/
+    float:left;
+    display: block;
+    
+}
