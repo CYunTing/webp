@@ -1,0 +1,46 @@
+.d3
+{ /*for 三角形*/
+    width: 0;
+    height: 0;
+    border-top: 25px solid #FFCCCC;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    margin-left: 600px;;
+    text-align:left;
+   
+    margin-right:60px;
+
+}
+
+.d1{    /*for station*/
+    width:250px;
+    height: 60px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: rgb(154, 210, 233);
+    padding-left: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:500px;
+    text-align:center; /*水平置中*/
+    line-height:60px; /*垂直置中*/
+}
+
+.d1_left{ /*for t*/
+    width:580px;
+    height:25px;
+    text-align:right;
+    line-height:30px;
+    float:left;
+}
+
+.d1_right{
+    width:830px;
+    height:25px;
+    text-align:left;
+    line-height:30px;
+    float:right;
+   
+}
+
+
