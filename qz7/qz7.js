@@ -17,10 +17,10 @@ data.done( function( msg ) {
 
     for(var i=0;i<5;i++)
     {
-        stationNo[i]=msg[i].data.stationNo;
-        stationName[i]=msg[i].data.stationName;
-        recTime[i]=msg[i].data.recTime;
-        rain[i]=msg[i].data.rain;
+        stationNo[i] = msg.data[i].stationNo;
+        stationName[i]=msg.data[i].stationName;
+        recTime[i]=msg.data[i].recTime;
+        rain[i]=msg.data[i].rain;
     }
 
     for(i=0;i<5;i++){
@@ -33,12 +33,11 @@ data.done( function( msg ) {
 
     for(var i=0;i<5;i++){
         var text1=stationName[i]+"("+stationName[i]+")";
-        var text2= y[i]+"年"+m[i]+"月"+d[i]+"號"+hour+"點"+min+"分";
+        var text2= y[i]+"年"+m[i]+"月"+d[i]+"號"+hour[i]+"點"+min[i]+"分";
         var text3= "即時雨量"+rain[i];
-        $("#contain").append($("<h2>").text1);
-        $("#contain").append($("<h2>").text2);
-        $("#contain").append($("<h2>").text3);
+        $("#contain").append($("<h2>").text(text1));
+        $("#contain").append($("<h3>").text(text2));
+        $("#contain").append($("<h3>").text(text3));
     }
 
 }); 
-
