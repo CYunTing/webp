@@ -40,9 +40,18 @@ $.ajax({
             }
 
             for (i = 0; i <= 20; i++){
+                $('#StartStation').append("<option>"+station[i]+"</option>");
+            }
+            for (i = 0; i <= 20; i++){
+                $('#EndStation').append("<option>"+station[i]+"</option>");
+            }
+
+            for (i = 0; i <= 20; i++){
                 var theText = RunTime[i] + "分鐘";
                 $('#t' + (i+1)).append(theText);
             }
+
+
             
 
         },
@@ -56,22 +65,42 @@ $.ajax({
     dataType: "JSON",
     success:
         function (res) {
+            console.log(res);
             for (i = 0; i <= 19; i++){
                 var pri = res[0+20*i+i].Fares[0].Price;
                 price[i] = pri;
             }
 
-
             for (i = 0; i <= 20; i++){
                 var theText = price[i] + "元";
                 $('#p' + (i+1)).append(theText);
             }
+
+            $("#bt").click(
+                function () {
+                    var start = $("#StartStation").val();
+                    var end = $("#EndStation").val();
+                    if (start == end)
+                        $("#Price").html("請選擇不同的捷運站");
+                    else {
+                        for (i = 0; i < 420; i++) {
+                            if (res[i].OriginStationName.Zh_tw == start && res[i].DestinationStationName.Zh_tw == end) {
+                                var p = res[i].Fares[0].Price;
+                                $("#Price").html(p);
+                            }
+                        }
+                    }
+                }
+            )
+
+            
         },
-        
-        
-        
+    
     error:function(err){console.log(err)},
 });
+
+
+
     
 
 
